@@ -1,0 +1,256 @@
+delete from AGENCY;
+delete from CUSTOMER;
+delete from DEPARTMENT;
+delete from EMPLOYEE;
+delete from MEMBERSHIP_ACCOUNT;
+delete from PAYMENTS;
+delete from PRODUCT;
+delete from PRODUCT_MAINTENANCE;
+delete from SALES;
+delete from WHOLESALER;
+
+
+insert into department values ( '101','Security');
+
+insert into department values ('102','Maintenance');
+
+insert into department values ('103','Cleaning');
+
+insert into department values ('104','Cashier');
+
+insert into department values ('105','Management');
+
+insert into department values ('106','Salesman');
+
+insert into agency values ('1001','KLS',  '9284793293', 'Landmark complex,ambavadi,ahmedabad');
+
+insert into agency values ('1002','Global security',  '7659838296', 'Bodakdev,ahmedabad');
+
+insert into agency values ('1003', 'SP sheth services', '9847823902', 'Sector 21,Gandhinagar');
+
+insert into agency values ('1004','saniclean cleaning services',  '84753939028', 'Sector 16,Gandhinagar');
+
+insert into agency values ('1005','J.P Traders',  '94753939028', 'Crecent Circle,Bhavnagar');
+
+
+
+
+insert into customer values ('A89238','Anil', '894759032', 'Navrangpura,ahmedabad' );
+
+insert into customer values ('B89248','Akash', '8948937828', 'Chitra road,Botad', );
+
+insert into customer values ('C92832','Om', '9349382922', 'NR.Iscon mega mall,ahmedabad' );
+
+insert into customer values ('A89473','Rahul', '972979902', 'Valad, Gandhinagar' );
+
+insert into customer values ('A38993','Vaid', '9380239022', 'Raisan, gandhinagar' );
+
+insert into customer values ('A28948','Kim', '837592342', 'NR.Alpha-1,ahmedabad' );
+
+
+insert into customer values ('A28950','Shubham', '701592342', 'Digjam Circle,Ahmedabad' );
+insert into customer values ('A28952','Raina', '8375923567', 'Chiloda,ahmedabad' );
+insert into customer values ('A28954','Parthiv', '8387892342', 'Prahladnagar,ahmedabad' );
+insert into customer values ('A28955','Rohan', '9991034557', 'Jogger's Garden,ahmedabad' );
+insert into customer values ('A28956','Heena', '9945234547', 'Iscon Platinum ,South Bopal,ahmedabad' );
+insert into customer values ('A28957','Rima', '9998234537', 'Lakhota Lake,ahmedabad' );
+insert into customer values ('A28959','Priya', '9996234527', 'Satellite,ahmedabad' );
+insert into customer values ('A28961','Raj', '9998234527', 'Helmet Circle,ahmedabad' );
+insert into customer values ('A28963','Karthik', '9998234537', 'Air-Force Colony,Jamnagar' );
+insert into customer values ('A28965','Shreya', '9998234547', 'Maninagar,ahmedabad' );
+insert into customer values ('A28967','Ishant', '9993234557', 'Sabarmati,ahmedabad' );
+insert into customer values ('A28969','Manali', '9990234567', 'NR. RTO Circle,ahmedabad' );
+insert into customer values ('A28971','Yusuf', '99952345170', 'NR. Riverfront,ahmedabad' );
+insert into customer values ('A28972','Aamir', '99942345179', 'NR.Patel Colony,ahmedabad' );
+
+insert into employee values ('A28392','101','Raghu', '20000', '9399920702','1002' );
+
+insert into employee values ('B99290','101','Ram',  '15000', '9456677454','1003' );
+insert into employee values ('C34333','102','Nilesh',  '17000', '9476232833','1001' );
+
+insert into employee values ('D93992','103','Ravi',  '13000', '9993019991','1004' );
+
+insert into employee values ('E23822','103','Shailesh',  '10000', '9839309210','1001' );
+
+insert into employee values ('F12283','104','Prachi',  '30000', '989458092','1002' );
+insert into employee values ('G82816','105','Shweta',  '40000', '989248089','1005' );
+insert into employee values ('H82809','105','Pooja',  '23000', '989248192','1005');
+insert into employee values ('I90832','106','Vidyawati',  '43000', '989298092','1001' );
+insert into employee values ('J56832','106','Pratham',  '63000', '989244092','1004');
+insert into wholesaler values ('00128', 'Gempaid Stationary', 'Ahmedabad', '9949803943');
+
+insert into wholesaler values ('12345', 'Shankar Stationary', 'Gandhinagar', '9289349223');
+
+insert into wholesaler values ('19991', 'Brandt Hardware shop', 'Palanpur', '9984022232');
+insert into wholesaler values ('19956', 'Mehta Electronics', 'Jamnagar', '9984027827');
+insert into wholesaler values ('11163', 'Karun Plastics', 'Bhavnagar', '9966251894');
+insert into wholesaler values ('19128', 'World of Sports', 'Ahmedabad', '9968989449');
+insert into wholesaler values ('45467', 'Home Decor', 'Bhavnagar', '9429530253');
+insert into wholesaler values ('54578', 'Footloose', 'Bhavnagar', '9454124763');
+insert into wholesaler values ('78881', 'Gajanan Clothes', 'Bhavnagar', '9784524763');
+insert into wholesaler values ('13334', 'Somnath Electronics', 'Bhavnagar', '9555738204');
+insert into wholesaler values ('14567', 'Sk Bags', 'Bhavnagar', '9871647813');
+insert into wholesaler values ('10001', 'T.C Hardware', 'Patan', '7016567792');
+insert into wholesaler values ('10095', 'Haber Clothes', 'Bhavnagar', '9454155763');
+insert into wholesaler values ('11783', 'Unicorn Sports', 'Bhavnagar', '74900324523');
+insert into wholesaler values ('25251', 'Shree Ram Grocery', 'Bhavnagar', '9996783421');
+insert into wholesaler values ('10923', 'Super Medical', 'Bhavnagar', '9545283941');
+
+
+insert into product values ('16433','Camlin', 40, 'pencils', 'Stationary',  '12345');
+
+insert into product values ('93502','Apsara', 20, 'Rubber', 'Stationary',  '12345');
+
+insert into product values ('93602','Cello', 25, 'JotDot', 'Stationary',  '12345');
+
+insert into product values ('93702','Camel', 150, 'Geometry Box', 'Stationary',  '12345');
+
+
+insert into product values ('10276','Tesla Steel', 20, 'Ball Bearings', 'Hardware',  '19991');
+
+insert into product values ('10277','Phoenix bolts', 20, 'Nut and Bolts', 'Hardware',  '19991');
+insert into product values ('10244','Screw King', 7, '30 mm Screw', 'Hardware',  '19991');
+
+insert into product values ('10278','Tesla Steel', 200, 'V-Clamp', 'Hardware',  '19991');
+insert into product values ('16392','Navneet', 40, 'Notebook', 'Stationary',  '00128');
+
+
+insert into product values ('12291','Camlin', 100, 'Drawing Book', 'Stationary',  '00128');
+
+
+insert into product values ('10839','I-Ball', 1200, 'Wi-MOUSE', 'Electronics',  '19956');
+insert into product values ('10840','Dell', 52000, 'Inspiron 5550', 'Electronics',  '19956');
+insert into product values ('10841','Apple', 100000, 'MacBook Pro', 'Electronics',  '19956');
+insert into product values ('10842','Havells', 1300, 'Tubelight', 'Electronics',  '19956');
+insert into product values ('11131','Princeware', 80, 'Bucket', 'Plastics',  '11163');
+insert into product values ('11133','Milton', 130, 'Bottle', 'Plastics',  '11163');
+insert into product values ('11134','Finolex', 220, 'Pipes', 'Plastics',  '11163');
+insert into product values ('11135','Tupperware', 170, 'Container', 'Plastics',  '11163');
+
+insert into product values ('10245','Nike', 7500, 'FlyKnit', 'Sports',  '19128');
+insert into product values ('10246','Puma', 1500, 'FlipFlops', 'Sports',  '19128');
+insert into product values ('10247','S.G', 4500, 'Cobra', 'Sports',  '19128');
+insert into product values ('10248','Nilkamal', 7500, 'Chair', 'Furniture',  '45467');
+insert into product values ('10249','Dream Decor', 75000, 'Bed', 'Furniture',  '45467');
+insert into product values ('10250','TimberLand', 4500, 'Bean Bag', 'Furniture',  '45467');
+insert into product values ('20244','Sleepwell', 50000, 'Sofa', 'Furniture',  '45467');
+insert into product values ('20245','Nike', 7500, 'FlyKni', 'shoes',  '54578');
+insert into product values ('20246','Nike', 10000, 'Air-Jordan', 'shoes',  '54578');
+insert into product values ('20247','Puma', 4500, 'X-1', 'shoes',  '54578');
+
+insert into product values ('10344','Adidas', 4500, 'Cross em 4', 'shoes',  '54578');
+insert into product values ('10444','Levis', 3500, 'Skinny Jeans', 'Clothes',  '78881');
+insert into product values ('11244','Lee', 1200, 'Polo T-shirt', 'Clothes',  '78881');
+insert into product values ('12244','Wrangler', 800, 'Sweater', 'Clothes',  '78881');
+insert into product values ('13244','Flying Machine', 1000, 'Track pants', 'Clothes',  '78881');
+insert into product values ('14244','Bajaj', 1700, 'Fans', 'Electronics',  '13334');
+insert into product values ('15244','Daikin', 30000, 'Air Conditioner', 'Electronics',  '13334');
+insert into product values ('16244','Tata Sky', 5000, 'FlyKnit', 'Set-Top Box',  '13334');
+insert into product values ('17244','Samsung', 100000, 'FlyKnit', 'LED TV',  '13334');
+insert into product values ('18244','Skybags', 7500, 'Multiway', 'Bags',  '14567');
+insert into product values ('19244','Gucci', 55000, 'Clutch', 'Bags',  '14567');
+insert into product values ('10844','Caprese', 72500, 'SideBag', 'Bags',  '14567');
+insert into product values ('10267','Wildcraft', 1500, 'Laptop Bag', 'Bags',  '14567');
+insert into product values ('10567','Ganga Taps', 750, 'Tap', 'Hardware',  '10001');
+
+insert into product values ('30244','Pepe Jeans', 7500, 'Round neck T-shirt', 'Clothes',  '10095');
+insert into product values ('40244','Johnny Walker', 2500, 'Straight Fit Jeans', 'Clothes',  '10095');
+insert into product values ('50244','Raymond', 7500, 'Blazer', 'Clothes',  '10095');
+insert into product values ('60244','Vimal', 5550, 'Trouser', 'Clothes',  '10095');
+insert into product values ('70244','Khanna', 250, 'Cricket ball', 'Sports',  '11783');
+insert into product values ('80244',Head', 400, 'Tennis balls', 'Sports',  '11783');
+insert into product values ('80256','Babolat ', 15000, 'Aero Drive Tennis Raquets', 'Sports',  '11783');
+insert into product values ('90245','Spalding', 3000, 'Basketball', 'Sports',  '11783');
+insert into product values ('90246','Pepsi', 55, 'Cold Drink', 'Grocery',  '25251');
+insert into product values ('90247','Yummys', 75, 'Wafers', 'Grocery',  '25251');
+insert into product values ('90248','Toblerone', 99, 'Chocolate', 'Grocery',  '25251');
+insert into product values ('90249','Lay's', 30, 'Wafers', 'Grocery',  '25251');
+insert into product values ('90250','Ranbaxy', 135, 'Volini', 'Medicals',  '10923');
+insert into product values ('90258','Sarbax', 75, 'Diclofenac', 'Medicals',  '10923');
+insert into product values ('90268','D-Cold', 45, 'Paracetamol', 'Medicals',  '10923');
+insert into product values ('90278','Life-Care', 750, 'Protein Powder', 'Medicals',  '10923');
+
+insert into membership_account values ('A89473', 5000, 200);
+
+insert into membership_account values ('A28948', 0, 1000);
+insert into membership_account values ('B89248', 2000, 1000);
+insert into membership_account values ('C92832', 7500, 500);
+insert into membership_account values ('A38993', 1000, 0);
+
+insert into product_maintenance values('90278','Yes','No');
+insert into product_maintenance values('90268','Yes','Yes');
+insert into product_maintenance values('90258','No','No');
+insert into product_maintenance values('90250','No','Yes');
+insert into product_maintenance values('90249','Yes','Yes');
+insert into product_maintenance values('90248','No','Yes');
+insert into product_maintenance values('90247','Yes','Yes');
+insert into product_maintenance values('90246','Yes','Yes');
+insert into product_maintenance values('90245','No','No');
+insert into product_maintenance values('80256','No','Yes');
+
+
+
+
+
+
+insert into sales values('I90832','A89238','90278','2017-01-01 9:00:00',2);
+insert into sales values('I90832','A89238','90268','2017-01-12 9:00:00',1);
+insert into sales values('I90832','B89248','90246','2017-01-13 10:00:00',1);
+insert into sales values('I90832','B89248','90247','2017-01-13 11:00:00',1);
+insert into sales values('I90832','C92832','80244','2017-01-14 11:00:00',1);
+insert into sales values('I90832','C92832','70244','2017-01-15 11:15:00',1);
+insert into sales values('I90832','A89473','60244','2017-01-15 11:30:00',1);
+insert into sales values('I90832','A89473','50244','2017-01-15 15:30:00',1);
+insert into sales values('I90832','A38993','30244','2017-01-15 15:00:00',1);
+insert into sales values('I90832','A38993','10567','2017-01-16 9:00:00',1);
+
+insert into sales values('J56832','A28948','10267','2017-01-16 9:00:00',1);
+insert into sales values('J56832','A28950','10344','2017-01-16 10:00:00',1);
+insert into sales values('J56832','A28950','19244','2017-01-16 11:00:00',1);
+insert into sales values('J56832','A28952','18244','2017-01-16 12:00:00',1);
+insert into sales values('J56832','A28952','17244','2017-01-16 13:00:00',1);
+insert into sales values('J56832','A28954','16244','2017-01-16 14:00:00',1);
+insert into sales values('J56832','A28954','15244','2017-01-16 15:00:00',1);
+insert into sales values('J56832','A28955','14244','2017-01-16 16:00:00',1);
+insert into sales values('J56832','A28955','13244','2017-01-16 17:00:00',1);
+insert into sales values('J56832','A28955','12244','2017-01-16 18:00:00',1);
+
+
+insert into sales values('I90832','A28956','20247','2017-01-17 9:00:00',1);
+insert into sales values('I90832','A28957','20246','2017-01-17 10:00:00',1);
+insert into sales values('I90832','A28959','20245','2017-01-17 11:00:00',1);
+insert into sales values('I90832','A28961','20244','2017-01-17 12:00:00',1);
+insert into sales values('I90832','A28963','10250','2017-01-17 13:00:00',1);
+insert into sales values('J56832','A28965','10249','2017-01-17 14:00:00',1);
+insert into sales values('J56832','A28967','10248','2017-01-17 15:00:00',1);
+insert into sales values('J56832','A28969','10247','2017-01-17 17:00:00',1);
+insert into sales values('J56832','A28971','10246','2017-01-17 18:00:00',1);
+insert into sales values('J56832','A28972','10245','2017-01-17 19:00:00',1);
+
+
+insert into payments values('100001','A89238',1545);
+insert into payments values('100002','B89248',130);
+insert into payments values('100003','C92832'650);
+insert into payments values('100004','A89473',13050);
+insert into payments values('100005','A38993',8250);
+insert into payments values('100006','A28948',1500);
+insert into payments values('100007','A28950',127500);
+insert into payments values('100008','A28952',107500);
+insert into payments values('100009','A28954',35000);
+insert into payments values('100010','A28955',1800);
+insert into payments values('100011','A28956',4500);
+insert into payments values('100012','A28957',10000);
+insert into payments values('100013','A28959',7500);
+insert into payments values('100014','A28961',50000);
+insert into payments values('100015','A28963',4500);
+insert into payments values('100016','A28965',75000);
+insert into payments values('100017','A28967',7500);
+insert into payments values('100018','A28969',4500);
+insert into payments values('100019','A28971',1500);
+insert into payments values('100020','A28972',7500);
+
+
+
+
+
+

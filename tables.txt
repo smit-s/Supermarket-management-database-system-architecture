@@ -1,0 +1,37 @@
+create table Department(Department_ID varchar(3),Department_name varchar(25),primary key(Department_ID))
+;
+
+create table Employee(Employee_ID varchar(6),Department_ID varchar(6),Employee_name varchar(30),Salary float(8),Contact_no numeric(10,0),Agency_ID(6) varchar,(primary key(Employee_ID),foreign key(Department_ID)references Department,foreign key(Agency_ID) references Agency)
+;
+
+create table Agency(Agency_ID varchar(6),Agency_name varchar(30),Contact_no numeric(10,0),Address varchar(50),primary key(Agency_ID))
+;
+
+create table Customer(C_ID varchar(6),Customer_Name varchar(20),Contact_no numeric(10,0),Address varchar(50),primary key(C_ID))
+;
+
+create table Membership_Account(C_ID varchar(6),Discounts_availed int,Bonus_remaining int,primary key(C_ID), 
+foreign key(C_ID) references Customer)
+;
+
+create table Wholesaler(Wholesaler_ID varchar(7),Shop_name varchar(30),Address varchar(50),Contact_no numeric(10,0),primary key(Wholesaler_ID))
+;
+
+create table Product 
+(Product_ID varchar(5),Brand varchar(30),
+Price float(13),
+Product_name varchar(30), 
+ Product_Class varchar(20),
+ Wholesaler_ID varchar(7), 
+primary key(Product_ID), 
+foreign key(Wholesaler_ID)references Wholesaler)
+;
+
+create table Product_maintenance(Product_ID varchar(5),Product_availability varchar(3),Stock_ordered varchar(3),primary key(Product_id),foreign key(Product_ID)references Product)
+;
+
+create table payments(Payment_ID varchar(13),C_ID varchar(6),Amount int, primary key(Payment_ID),foreign key(C_ID) references Customer)
+;
+
+create table Sales(Employee_ID varchar(6),C_ID varchar(6),Product_ID varchar(5),Sales_date date,quantity int primary key(C_ID,Sales_date,Employee_ID,Product_ID),foreign key(C_ID) references Customer,foreign key(Product_ID) references Product,foreign key(Employee_ID) references Employee)
+;
